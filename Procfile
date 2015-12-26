@@ -1,0 +1,1 @@
+web: gunicorn pedalindia.wsgi --log-file -
