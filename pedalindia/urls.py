@@ -5,9 +5,8 @@ from events.views import EventsListView, EventDetailView
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', EventsListView.as_view(), name='home'),
-    url(r"^event/(?P<slug>\w+)/$", EventDetailView.as_view(),
-        name="event"),
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^events/(?P<slug>[\w-]+)/$', EventDetailView.as_view(),
+    name='events'),
 
     url(r'^admin/', include(admin.site.urls)),
 )

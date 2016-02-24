@@ -19,5 +19,4 @@ class EventsListView(ListView):
 
 class EventDetailView(DetailView):
     model = Event
-    slug_field = "name"
     template_name = "event_detail.html"
